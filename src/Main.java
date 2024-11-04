@@ -86,7 +86,6 @@ public class Main {
         } else if (occupiedSeats >= carriageCapacity) {
             System.out.println("Если в вагоне " + occupiedSeats + " пассажиров то вагон полностью забит");
         }
-
 //        ЗАДАЧА 7
         int one = 1;
         int two = 2;
