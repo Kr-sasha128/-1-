@@ -13,10 +13,10 @@ public class Main {
         } else {
             System.out.println("Ты прошел тест");
         }
-        int ageTho = 17;
-        if (ageTho >= 18 && ageTho < 21) ;
-        System.out.println("Ты достаточно взрослый чтобы водить но недостаточно взрослый, чтобы пить алкоголь");
-
+        int ageTwo = 18;
+        if (ageTwo >= 18 && ageTwo < 21) {
+            System.out.println("Ты достаточно взрослый чтобы водить но недостаточно взрослый, чтобы пить алкоголь");
+        }
         int ageThree = 21;
         boolean canNotGoToSkool = ageThree < 7 || ageThree > 18;
         if (canNotGoToSkool) {
@@ -46,31 +46,31 @@ public class Main {
             System.out.println("Если скорость " + speedKm + "Км/ч то можно ездить спокойно");
         }
 //        ЗАДАЧА 4
-        int Vozrast = 25;
-        if (Vozrast > 2 && Vozrast <= 6) {
-            System.out.println("Если возраст человека равен " + Vozrast + " то ему нужно ходить в детский сад");
+        int vozrast = 17;
+        if (vozrast >= 2 && vozrast <= 6) {
+            System.out.println("Если возраст человека равен " + vozrast + " то ему нужно ходить в детский сад");
         }
-        if (Vozrast > 7 && Vozrast <= 17) {
-            System.out.println("Если возраст человека равен " + Vozrast + " то ему нужно ходить в школу");
+        if (vozrast >= 7 && vozrast <= 17) {
+            System.out.println("Если возраст человека равен " + vozrast + " то ему нужно ходить в школу");
         }
-        if (Vozrast >= 18 && Vozrast <= 24) {
-            System.out.println("Если возраст человека равен " + Vozrast + " то его место в университете");
-        } else {
-            System.out.println("Если возраст человека равен " + Vozrast + " то ему пора ходить на работу");
+        if (vozrast >= 18 && vozrast <= 24) {
+            System.out.println("Если возраст человека равен " + vozrast + " то его место в университете");
+        } else if (vozrast >= 24) {
+            System.out.println("Если возраст человека равен " + vozrast + " то ему пора ходить на работу");
         }
 //        ЗАДАЧА 5
-        int AgeForAttraction = 4;
-        boolean RazresheniyeNaAtraktsiony = AgeForAttraction < 5;
-        if (RazresheniyeNaAtraktsiony) {
-            System.out.println("Если возраст ребёнка равен " + AgeForAttraction + " нельзя кататься на аттракционе");
+        int ageForAttraction = 5;
+        boolean razresheniyeNaAtraktsiony = ageForAttraction < 5;
+        if (razresheniyeNaAtraktsiony) {
+            System.out.println("Если возраст ребёнка равен " + ageForAttraction + " нельзя кататься на аттракционе");
         }
-        RazresheniyeNaAtraktsiony = AgeForAttraction >= 5 && AgeForAttraction < 14;
-        if (RazresheniyeNaAtraktsiony) {
-            System.out.println("Если возраст ребёнка равен " + AgeForAttraction + " можно кататься на аттракционе в сопровождении взрослого");
+        razresheniyeNaAtraktsiony = ageForAttraction >= 5 && ageForAttraction < 14;
+        if (razresheniyeNaAtraktsiony) {
+            System.out.println("Если возраст ребёнка равен " + ageForAttraction + " можно кататься на аттракционе в сопровождении взрослого");
         }
-        RazresheniyeNaAtraktsiony = AgeForAttraction >= 14;
-        if (RazresheniyeNaAtraktsiony) {
-            System.out.println("Если возраст ребёнка равен " + AgeForAttraction + " можно кататься на аттракционе без сопровождения взрослого");
+        razresheniyeNaAtraktsiony = ageForAttraction >= 14;
+        if (razresheniyeNaAtraktsiony) {
+            System.out.println("Если возраст ребёнка равен " + ageForAttraction + " можно кататься на аттракционе без сопровождения взрослого");
         }
 //        ЗАДАЧА 6
         int occupiedSeats = 50;
@@ -88,7 +88,7 @@ public class Main {
         }
 //        ЗАДАЧА 7
         int one = 1;
-        int two = 2;
+        int two = 5;
         int three = 3;
         if (one > two && one > three) {
             System.out.println(" Число one больше остальных");
@@ -96,6 +96,7 @@ public class Main {
             System.out.println(" Число two больше остальных");
         } else {
             System.out.println(" Число three больше остальных");
+//            Исправленное ДЗ
         }
     }
 }
